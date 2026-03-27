@@ -22,5 +22,5 @@ print("\n--- Hedefi Geçen Mağazalar ---")
 print(basarili_magazalar)
 
 # 4. Ortalama satışı NumPy ile hesapla
-ortalama = np.mean(satislar)
+ortalama = np.mean(df['Gunluk_Satis'])
 print(f"\nTüm mağazaların satış ortalaması: {ortalama} TL")
