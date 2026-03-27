@@ -37,3 +37,17 @@ Listeler değiştirilebilir veri tipidir. Eleman ekleyebilir, silebilir veya de�
 * **insert()** -> araya
 * **remove()** -> isme göre sil
 * **pop()** -> sıraya (index) göre sil
+### 🔹 6. Dilimleme (Slicing)
+`liste[başlangıç:bitiş]` -> Bitiş indeksi dahil değildir!
+* `meyveler[0:2]` -> 0 ve 1. indeksi getirir.
+* `meyveler[:3]` -> Baştan başla 3. indekse kadar git.
+
+### 🔹 7. Liste Matematik İşlemleri
+* **Toplama (+):** İki listeyi birleştirir. `[1,2] + [3,4]` -> `[1,2,3,4]`
+* **Çarpma (*):** Listeyi tekrarlar. `['a'] * 3` -> `['a', 'a', 'a']`
+
+### 🔹 8. Diğer Önemli Metotlar
+* **in:** Eleman listede mi? `"elma" in meyveler` -> `True/False`
+* **count():** Eleman kaç kez geçiyor? `liste.count("elma")`
+* **sort():** Listeyi alfabetik veya küçükten büyüğe sıralar.
+* **clear():** Listenin içini tamamen boşaltır.
