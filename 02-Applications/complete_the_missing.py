@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # 1. Read Data
-df = pd.read_csv("../new_data.csv")
+df = pd.read_csv("new_data.csv")
 
 # 2. See Unique Products with SET (Example of using Set for missing items)
 unique_products = set(df['product'])
