@@ -1,7 +1,7 @@
 """
 Data Science Journey - String Manipulation Lab
-Bu çalışma, mağaza verileri (ID, ZIP, URL) üzerindeki metin işlemlerini 
-ve veri doğrulama (validation) süreçlerini içerir.
+This study involves text processing and data validation processes 
+on store data (ID, ZIP, URL).
 """
 
 # Task 1: Type Conversion
@@ -39,7 +39,7 @@ def url_checker(url):
     else:
         return store_id
 
-# Testler (Opsiyonel)
+# Tests (Optional)
 if __name__ == "__main__":
     print(f"Extracted ID: {id_extracted}")
     print(f"ZIP Check (2806): {zip_checker('2806')}")

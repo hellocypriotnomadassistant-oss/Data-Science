@@ -1,19 +1,21 @@
+import re
+
 def format_price(price):
-    return f"Fiyat: {price:.2f} TL"
+    """Formats a numeric price into a string with 2 decimal places."""
+    return f"Price: ${price:.2f}"
 
 def format_user(name, number):
-    return f"Merhaba {name}, numaran {number}"
-import re # Dosyanın en üstüne eklemeyi unutma!
+    """Returns a greeting message for a specific user and ID."""
+    return f"Hello {name}, your ID is {number}"
 
-# Mevcut fonksiyonlarının altına bunları ekle:
 def clean_text(text):
-    """Metni temizler: boşlukları atar ve küçük harf yapar."""
+    """Cleans the text: trims whitespace and converts to lowercase."""
     return text.strip().lower()
 
 def has_pattern(text, pattern):
-    """Metin içinde belirli bir desen (regex) var mı diye bakar."""
+    """Checks if a specific regex pattern exists within the text."""
     return bool(re.search(pattern, text))
 
 def format_percentage(value):
-    """Sayiyi yüzde formatına çevirir (Örn: 0.25 -> %25.00)"""
+    """Converts a decimal value to a percentage format (e.g., 0.25 -> 25.00%)."""
     return f"{value:.2%}"

@@ -1,26 +1,26 @@
 import pandas as pd
 import numpy as np
 
-# 1. NumPy ile rastgele satış verileri üretelim
-satislar = np.array([4500, 7800, 3200, 9100, 5600])
+# 1. Generate random sales data using NumPy
+sales = np.array([4500, 7800, 3200, 9100, 5600])
 
-# 2. Pandas ile bu verileri bir tabloya (DataFrame) dönüştürelim
-veri = {
-    'Magaza_ID': ['M01', 'M02', 'M03', 'M04', 'M05'],
-    'Gunluk_Satis': satislar,
-    'Bolge': ['Kuzey', 'Guney', 'Kuzey', 'Bati', 'Dogu']
+# 2. Convert this data into a table (DataFrame) using Pandas
+data = {
+    'Store_ID': ['M01', 'M02', 'M03', 'M04', 'M05'],
+    'Daily_Sales': sales,
+    'Region': ['North', 'South', 'North', 'West', 'East']
 }
 
-df = pd.DataFrame(veri)
+df = pd.DataFrame(data)
 
-# 3. Analiz: Satışı 5000'den fazla olan mağazaları filtrele
-basarili_magazalar = df[df['Gunluk_Satis'] > 5000]
+# 3. Analysis: Filter stores with sales greater than 5000
+successful_stores = df[df['Daily_Sales'] > 5000]
 
-print("--- Tüm Mağaza Listesi ---")
+print("--- Full Store List ---")
 print(df)
-print("\n--- Hedefi Geçen Mağazalar ---")
-print(basarili_magazalar)
+print("\n--- Stores That Exceeded the Target ---")
+print(successful_stores)
 
-# 4. Ortalama satışı NumPy ile hesapla
-ortalama = np.mean(df['Gunluk_Satis'])
-print(f"\nTüm mağazaların satış ortalaması: {ortalama} TL")
+# 4. Calculate average sales using NumPy
+average_sales = np.mean(df['Daily_Sales'])
+print(f"\nAverage sales of all stores: {average_sales} USD")
