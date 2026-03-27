@@ -1,0 +1,21 @@
+secret_number = 7  # The number held by the computer
+guess_count = 0
+
+print("--- Welcome to the Number Guessing Game! ---")
+print("I've picked a number between 1 and 10. Give it a shot!")
+
+while True:
+    guess = int(input("What is your guess?: "))
+    guess_count += 1
+
+    if guess < 0:
+        print("Please do not enter a negative number!")
+        continue  # If negative is entered, skip this turn and go back to start
+
+    if guess < secret_number:
+        print("Try a HIGHER number...")
+    elif guess > secret_number:
+        print("Try a LOWER number...")
+    else:
+        print(f"CONGRATULATIONS! You found it in {guess_count} attempts.")
+        break  # Exit the loop when guessed correctly
