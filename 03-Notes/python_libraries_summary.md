@@ -3,30 +3,20 @@
 
 ---
 
-## 1. Advanced Python Capabilities
-Python extends its core functionality through **functions, objects, packages, modules, and libraries**. If a feature is not in the built-in Python core, we bring it into our scripts using the `import` statement.
+## 1. Core Definitions
+- **Library:** A collection of reusable code modules and documentation.
+- **Package:** An organized, distributable form of libraries.
+- **Module:** A sub-component of libraries; contains functions, classes, and variables.
+*Note: A library can contain multiple modules.*
 
-## 2. Core Data Science Libraries
-| Library | Purpose | Key Features |
-| :--- | :--- | :--- |
-| **NumPy** | Numerical Python | Multi-dimensional arrays, matrices, and scientific computing. |
-| **Pandas** | Data Manipulation | Built on NumPy; ideal for tabular data (DataFrames) and analysis. |
-| **Matplotlib** | Visualization | Static, animated, and interactive visualizations. |
-| **Seaborn** | Advanced Viz | Built on Matplotlib; provides high-level, aesthetic statistical graphics. |
+## 2. Importing Libraries
+If a feature is not in the Python Standard Library, it must be installed first (usually via `pip`) and then imported into your script.
 
-
-
-## 3. Advanced Machine Learning & Stats
-* **Scikit-learn:** Used for machine learning and model performance testing.
-* **Statsmodels:** Focused on statistical modeling.
-
-## 4. Understanding Modules
-A **Module** is a Python file (`.py`) containing a collection of functions and global variables. 
-* **math:** For mathematical functions.
-* **random:** For generating random numbers, shuffling, and sampling.
-
-## 5. Practical Reminders
-* **Importing:** You can import an entire package or just specific functions to keep your code efficient.
-* **Pre-installed:** Most professional environments (like Coursera notebooks) come with these libraries ready to use.
-
-> **Goal:** Mastering these modules strengthens your ability to handle complex data analysis tasks.
+**Basic Syntax:**
+```python
+import numpy
+numpy.array([2,4,6])
+import numpy as np
+np.array([2,4,6])
+from sklearn.metrics import precision_score, recall_score
+from numpy import array
