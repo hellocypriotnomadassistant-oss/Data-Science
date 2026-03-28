@@ -18,6 +18,6 @@ You can create an array from standard Python objects like lists:
 
 ```python
 import numpy as np
-arr = np.array([1, 2, 3])
+arr = np.array([1, 2, 3, 4, 5, 6, 7, 8])
 # Convert a 1D array of 8 elements into a 2x4 matrix
 arr.reshape(2, 4)
