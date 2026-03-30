@@ -18,3 +18,6 @@ This repository contains the projects and analyses I have conducted on my path t
 - **Language**: Python
 - **Libraries**: Pandas, NumPy, Matplotlib, Seaborn
 - **Tools**: VS Code, Jupyter Notebook, Git/GitHub
+# Waze User Churn Analysis 🚗
+## Project Overview
+This project analyzes Waze user data to understand factors leading to churn...
