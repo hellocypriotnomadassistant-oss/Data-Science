@@ -1,4 +1,4 @@
-```python
+
 import pandas as pd
 
 # Creating a sample dataset based on your image
