@@ -1,0 +1,6 @@
+state_code,state_name,county_code,county_name,aqi
+6,California,1,Alameda,11.0
+6,California,37,Los Angeles,93.0
+6,California,37,Los Angeles,59.0
+48,Texas,141,El Paso,47.0
+42,Pennsylvania,101,Philadelphia,8.0

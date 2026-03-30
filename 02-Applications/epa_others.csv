@@ -1,0 +1,5 @@
+state_code,state_name,county_code,county_name,aqi
+4,Arizona,13,Maricopa,18.0
+53,Washington,33,King,55.0
+53,Washington,77,Yakima,58.0
+12,Florida,31,Duval,15.0
