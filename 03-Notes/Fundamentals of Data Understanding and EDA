@@ -1,0 +1,54 @@
+
+# Fundamentals of Data Understanding and EDA
+
+### 1. The Importance of Data Source
+The **Data Source** is the origin point of your information. Understanding it allows you to:
+* **Verify Reliability:** Assess the credibility of the data.
+* **Streamline Communication:** Know exactly who to contact (Engineers, Database Administrators, or Subject Matter Experts) when issues arise.
+* **Problem Solving:** Missing or incorrect data can often only be explained by understanding the source's logic.
+
+### 2. Understanding Data Collection Methods
+Data can be gathered through various channels:
+* **System Reports:** Automated outputs.
+* **Online Databases:** Real-time data streams.
+* **Manual Entry:** Human-inputted information.
+
+**Why is data missing?** Common reasons include human error (skipping fields), system failures, or synchronization delays.
+
+### 3. Common Data Formats
+* **Excel / Tables:** Structured rows and columns; easy to read.
+* **CSV (Comma-Separated Values):** Lightweight text files. 
+    * *Python Tool:* `pd.read_csv()`
+* **Databases (DB):** Ideal for Big Data; typically requires SQL knowledge.
+* **JSON:** Hierarchical, nested structures.
+    * *Python Tools:* `pd.read_json()`, `to_json()`
+
+### 4. Categorizing Data Types
+**By Source:**
+* **First-party:** Data collected directly by your organization.
+* **Second-party:** Data obtained directly from a partner's original source.
+* **Third-party:** Aggregated data from external providers.
+
+**By Content:**
+* Geographic, Demographic, Numerical, Time-based, Financial, and Qualitative.
+
+### 5. Evaluating Data Sufficiency
+During EDA, always ask these two critical questions:
+1. Is this data aligned with the project plan?
+2. Is there enough data for a meaningful analysis?
+
+> **Pro Tip:** If the answer is "No," you must return to the data owners to request additional information.
+
+### 6. Case Scenario
+* **Problem:** Predicting next month's customer count.
+* **Current Data:** Profit margins and only 2 months of customer history.
+* **Issue:** The dataset is insufficient for a reliable forecast.
+* **Solution:** Request at least 2–3 years of historical customer data.
+
+---
+
+### Core Message
+Great analysis begins with understanding the data. A data professional’s job isn't just "crunching numbers"—it’s identifying gaps, asking the right questions, and demanding better data when necessary.
+
+**Key Takeaway:**
+> *"Data is the raw ingredient; a correct analysis is the fine meal prepared from it."*

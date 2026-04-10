@@ -1,0 +1,13 @@
+# Exploratory Data Analysis (EDA)
+
+Exploratory Data Analysis (EDA) is the fundamental step in making sense of raw data. A data professional must thoroughly understand the data source, the meaning of columns, the intended use case, and any missing or erroneous aspects of the dataset.
+
+This section introduces various data types and sources, followed by practical EDA applications using **Python**. We focus specifically on the first two stages of EDA: **Exploring** and **Structuring**.
+
+### Key Concepts Covered:
+* **Data Inspection:** Utilizing Python functions to examine datasets.
+* **Visualization Techniques:** Identifying patterns and trends through charts.
+* **Data Manipulation:** Mastering sorting, filtering, slicing, joining, and indexing operations.
+* **Data Cleaning:** Addressing unanswered questions, such as handling missing values.
+
+The ultimate goal is to uncover hidden relationships within the data and find the "story" it needs to tell. Without a comprehensive EDA, any subsequent presentations or machine learning models will lack reliability and scientific integrity.
